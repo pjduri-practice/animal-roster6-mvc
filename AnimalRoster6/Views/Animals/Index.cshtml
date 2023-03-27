@@ -1,7 +1,7 @@
 ﻿<h1>Our Animals</h1>
 @if (ViewBag.animals.Count == 0)
 {
-    <h2>You don't have any animals! Go and add some to the roster, dude.</h2>
+    <h2>Oops! You don't have any animals!<br />Go and add some to the roster, dude.</h2>
 }
 else
 {
@@ -27,7 +27,7 @@ else
                 {
                     if (kvp.Key == "imgUrl")
                     {
-                        <td><img src="@kvp.Value" width="10%" /></td>
+                        <td><a href="@kvp.Value">Check Me Out!</a></td>
                     }
                     else
                     {
